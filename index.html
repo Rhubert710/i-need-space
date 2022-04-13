@@ -12,83 +12,83 @@
 </head>
 <body>
 
-    <div class="content">
+    <div id="main">
+        <div class="content" >
 
-        <h1>
-            When can I see a certain satellite?
-        </h1>
-        
-        <div class="section">
-            <div class="row">
-                <h2>
-                    Find Next Satellite Pass
-                </h2>
+            <h1>
+                When can I see a certain satellite?
+            </h1>
+            
+            <div class="section">
+                <div class="row">
+                    <h2>
+                        Find Next Satellite Pass
+                    </h2>
+                </div>
+                <div class="row">
+                    <label>Mapbox API Key</label>
+                    <input type="text" id="api-key"/>
+                </div>
+                <div class="row">
+                    <label>Address</label>
+                    <input type="text" id="address" value="los angles"/>
+                </div>
+                <div class="row">
+                    <label>Satellite NORAD</label>
+                    <input type="text" id="norad" />
+                </div>
+                <div class="row">
+                    <button id="search">
+                        Search
+                    </button>
+                </div>
             </div>
-            <div class="row">
-                <label>Mapbox API Key</label>
-                <input id="api-key" />
-            </div>
-            <div class="row">
-                <label>Address</label>
-                <input id="address" />
-            </div>
-            <div class="row">
-                <label>Satellite NORAD</label>
-                <input id="norad" />
-            </div>
-            <div class="row">
-                <button id="search">
-                    Search
-                </button>
+
+            <div class="section">
+                <div class="row">
+                    <h2>
+                        Notable Satellites
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        <b>Name</b>
+                    </div>
+                    <div class="title">
+                        <b>NORAD <br>(Satellite ID)</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item">
+                        Int. Space Station
+                    </div>
+                    <div class="item">
+                        25544
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item">
+                        Hubble Space Telescope
+                    </div>
+                    <div class="item">
+                        20580
+                    </div>
+                </div>
+
+                <div class="row">
+                    <b>Find more of the brightest satellites' NORAD IDs&nbsp;<a href="https://www.n2yo.com/satellites/?c=1">here</a>.</b>
+                </div>
             </div>
         </div>
 
-        <div class="section">
-            <div class="row">
-                <h2>
-                    Notable Satellites
-                </h2>
-            </div>
-            <div class="row">
-                <div class="title">
-                    <b>Name</b>
-                </div>
-                <div class="title">
-                    <b>NORAD (Satellite ID)</b>
-                </div>
-            </div>
-            <div class="row">
-                <div class="item">
-                    Int. Space Station
-                </div>
-                <div class="item">
-                    25544
-                </div>
-            </div>
-            <div class="row">
-                <div class="item">
-                    Hubble Space Telescope
-                </div>
-                <div class="item">
-                    20580
-                </div>
-            </div>
-            <div class="row">
-                <div class="item">
-                    SpaceX Dragon
-                </div>
-                <div class="item">
-                    46920
-                </div>
-            </div>
-            <div class="row">
-                <b>Find more of the brightest satellites' NORAD IDs&nbsp;<a href="https://www.n2yo.com/satellites/?c=1">here</a>.</b>
-            </div>
+        <div id="result">
+            <h2 id="result_text">test</h2>
+            <br><br>
+            <button id="again_button">try another</button>
         </div>
-
     </div>
 
-    <script src="apiKey.js"></script>
+    <!-- <script src="apiKey.js"></script> -->
     <script src="main.js"></script>
 </body>
 </html>
