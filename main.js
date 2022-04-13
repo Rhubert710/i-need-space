@@ -1,8 +1,8 @@
-// const api_key = "pk.eyJ1Ijoicmh1YmVydDcxMCIsImEiOiJjbDF4bng1eTUwNG1oM2NxZmZ1ZGFoOTljIn0.QIkqS_J47utACNrt6LeQwA"
+//i-need-space
 
 
 
-let api = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1Ijoicmh1YmVydDcxMCIsImEiOiJjbDF4bng1eTUwNG1oM2NxZmZ1ZGFoOTljIn0.QIkqS_J47utACNrt6LeQwA'
+
 
 document.querySelector('#search').addEventListener('click', async function(){
 
